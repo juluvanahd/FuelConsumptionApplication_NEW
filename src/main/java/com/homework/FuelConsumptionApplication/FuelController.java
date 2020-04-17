@@ -14,18 +14,18 @@ public class FuelController {
     private IFuelService fuelService;
 
     @RequestMapping("/resultSpecifiedMonth")
-    public List<Data> getMonth(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId,
+    public List<Data> getDataSpecifiedByMonth(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId,
                                @RequestParam(value = "month") String month) {
         return JsonResponse.getDataSpecifiedByMonth(driverId, month, fuelService);
     }
 
     @RequestMapping("/resultMoney")
-    public List<Total> getMonth(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId) {
+    public List<Total> getTotalMoneyGotten(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId) {
         return JsonResponse.getTotalMoneyGotten(driverId, fuelService);
     }
 
     @RequestMapping("/resultFuel")
-    public List<Fuel> resultFuel(
+    public List<Fuel> getDataBasedOnFuelType(
             @RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId,
             @RequestParam(value = "fuelType") String fuelType) {
         return JsonResponse.getDataBasedOnFuelType(driverId, fuelType, fuelService);
