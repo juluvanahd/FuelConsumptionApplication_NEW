@@ -3,14 +3,14 @@ package com.homework.FuelConsumptionApplication;
 public class Data {
     private int driverId;
     private String fuelType;
-    private Double price;
-    private Double liters;
+    private double price;
+    private double liters;
     private String date;
-    private Double totalPrice;
+    private double totalPrice;
 
     public Data() {  }
 
-    public Data(int driverID, String fuelType, Double price, Double liters, String date, Double totalPrice) {
+    public Data(int driverID, String fuelType, double price, double liters, String date, double totalPrice) {
         this.setDriverId(driverID);
         this.setFuelType(fuelType);
         this.setPrice(price);
@@ -27,19 +27,19 @@ public class Data {
 
     public void setFuelType(String fuelType) { this.fuelType = fuelType; }
 
-    public Double getPrice() { return price; }
+    public double getPrice() { return price; }
 
-    public void setPrice(Double price) { this.price = price; }
+    public void setPrice(double price) { this.price = price; }
 
-    public Double getLiters() { return liters; }
+    public double getLiters() { return liters; }
 
-    public void setLiters(Double liters) { this.liters = liters; }
+    public void setLiters(double liters) { this.liters = liters; }
 
     public String getDate() { return date; }
 
     public void setDate(String date) { this.date = date; }
 
-    public Double getTotalPrice() { return totalPrice; }
+    public double getTotalPrice() { return totalPrice; }
 
-    public void setTotalPrice(Double totalPrice) { this.totalPrice = totalPrice; }
+    public void setTotalPrice(double totalPrice) { this.totalPrice = totalPrice; }
 }

@@ -3,11 +3,11 @@ package com.homework.FuelConsumptionApplication;
 public class Fuel {
     private String month;
     private String fuelType;
-    private Double liters;
-    private Double totalPrice;
-    private Double averagePrice;
+    private double liters;
+    private double totalPrice;
+    private double averagePrice;
 
-    public Fuel(String month, String fuelType, Double liters, Double averagePrice, Double totalPrice)
+    public Fuel(String month, String fuelType, double liters, double averagePrice, double totalPrice)
     {
         this.setMonth(month);
         this.setFuelType(fuelType);
@@ -28,21 +28,21 @@ public class Fuel {
 
     public void setFuelType(String fuelType) { this.fuelType = fuelType; }
 
-    public Double getLiters() {
+    public double getLiters() {
         return liters;
     }
 
-    public void setLiters(Double liters) { this.liters = liters; }
+    public void setLiters(double liters) { this.liters = liters; }
 
-    public Double getTotalPrice() {
+    public double getTotalPrice() {
         return totalPrice;
     }
 
-    public void setTotalPrice(Double totalPrice) { this.totalPrice = totalPrice; }
+    public void setTotalPrice(double totalPrice) { this.totalPrice = totalPrice; }
 
-    public Double getAveragePrice() {
+    public double getAveragePrice() {
         return averagePrice;
     }
 
-    public void setAveragePrice(Double averagePrice) { this.averagePrice = averagePrice; }
+    public void setAveragePrice(double averagePrice) { this.averagePrice = averagePrice; }
 }
