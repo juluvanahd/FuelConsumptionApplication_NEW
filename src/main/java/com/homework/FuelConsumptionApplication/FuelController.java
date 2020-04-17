@@ -18,18 +18,18 @@ public class FuelController {
         return fuelService.findAll();
     }
 
-    @RequestMapping("/resultSpecifiedMonth")
+    @RequestMapping("/getDataSpecifiedByMonth")
     public List<Data> getDataSpecifiedByMonth(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId,
                                @RequestParam(value = "month") String month) {
         return JsonResponse.getDataSpecifiedByMonth(driverId, month, fuelService);
     }
 
-    @RequestMapping("/resultMoney")
-    public List<Total> getTotalMoneyGotten(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId) {
-        return JsonResponse.getTotalMoneyGotten(driverId, fuelService);
+    @RequestMapping("/getTotalMoneyReceived")
+    public List<Total> getTotalMoneyReceived(@RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId) {
+        return JsonResponse.getTotalMoneyReceived(driverId, fuelService);
     }
 
-    @RequestMapping("/resultFuel")
+    @RequestMapping("/getDataBasedOnFuelType")
     public List<Fuel> getDataBasedOnFuelType(
             @RequestParam(value = "driverId", required = false, defaultValue = "-1") int driverId,
             @RequestParam(value = "fuelType") String fuelType) {

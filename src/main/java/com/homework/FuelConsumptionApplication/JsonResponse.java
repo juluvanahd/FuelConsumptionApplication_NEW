@@ -21,7 +21,7 @@ public class JsonResponse {
                 .collect(Collectors.toList());
     }
 
-    public static List<Total> getTotalMoneyGotten(int driverId, IFuelService fuelService) {
+    public static List<Total> getTotalMoneyReceived(int driverId, IFuelService fuelService) {
         List<Data> data = callAndCheckRequest(driverId, fuelService);
 
         return IntStream.rangeClosed(1, 12)
