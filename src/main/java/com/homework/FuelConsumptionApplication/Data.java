@@ -10,8 +10,8 @@ public class Data {
 
     public Data() {  }
 
-    public Data(int driverID, String fuelType, double price, double liters, String date, double totalPrice) {
-        this.setDriverId(driverID);
+    public Data(int driverId, String fuelType, double price, double liters, String date, double totalPrice) {
+        this.setDriverId(driverId);
         this.setFuelType(fuelType);
         this.setPrice(price);
         this.setLiters(liters);

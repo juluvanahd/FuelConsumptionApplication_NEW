@@ -7,6 +7,7 @@
   - App is working on Port: 8080
   - Using Java 1.8
   - Using Gradle
+  - Using SQLite database
   - Default URL:
     ```sh 
     http://localhost:8080
