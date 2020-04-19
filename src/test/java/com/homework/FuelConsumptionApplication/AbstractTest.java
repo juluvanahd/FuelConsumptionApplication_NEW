@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AbstractTest {
+public abstract class AbstractTest {
 
     JsonResponse jsonResponse = new JsonResponse();
 
