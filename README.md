@@ -58,7 +58,7 @@ PARAMETERS:
 ## Examples
 ```sh 
 1. http://localhost:8080/getData
-2. http://localhost:8080/getDataSpecifiedByMonth?month=02&driverId=18
+2. http://localhost:8080/getDataSpecifiedByMonth?month=02&driverId=15
 3. http://localhost:8080/getTotalMoneyReceived?driverId=16
 4. http://localhost:8080/getDataBasedOnFuelType?fuelType=95&driverId=2
 5. http://localhost:8080/insertDriver?driverId=0&fuelType=95&price=1.39&liters=10.4&date=2020-04-17
