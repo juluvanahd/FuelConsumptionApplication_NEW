@@ -17,7 +17,9 @@ public class AbstractTest {
         assertEquals(12, response.size());
         assertEquals(expectedTotal, response.get(month).getTotalPrice());
         assertEquals(expectedAverage, response.get(month).getAveragePrice());
-        if(driverId > -1) { IntStream.range(0, response.size() - 1).forEach(i -> assertEquals(fuelType, response.get(i).getFuelType())); }
+        if(driverId > -1) {
+            IntStream.range(0, response.size() - 1).forEach(i -> assertEquals(fuelType, response.get(i).getFuelType()));
+        }
     }
 
     public void assertResponseForSpecifiedMonth(int driverId, int expectedSize, String month, IFuelService fuelService) {
@@ -25,7 +27,9 @@ public class AbstractTest {
 
         assertEquals(expectedSize, response.size());
         assertEquals(month, response.get(new Random().nextInt(response.size())).getDate().split("-")[1]);
-        if(driverId > -1) { IntStream.range(0, response.size() - 1).forEach(i -> assertEquals(driverId, response.get(i).getDriverId())); }
+        if(driverId > -1) {
+            IntStream.range(0, response.size() - 1).forEach(i -> assertEquals(driverId, response.get(i).getDriverId()));
+        }
     }
 
     public void assertResponseForMoneyReceived(int driverId, double expectedTotal, String monthName, int month, IFuelService fuelService) {
